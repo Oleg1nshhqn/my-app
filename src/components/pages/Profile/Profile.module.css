@@ -1,0 +1,192 @@
+.profilePage {
+  min-height: 70vh;
+  padding: 40px 50px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.profileInfo {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+.profileInfo h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #667eea;
+}
+
+.input.error {
+  border-color: #ff4444;
+}
+
+.errorText {
+  color: #ff4444;
+  font-size: 12px;
+  text-align: left;
+}
+
+.genderGroup {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.genderGroup label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.genderGroup input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.saveButton {
+  width: 100%;
+  padding: 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.saveButton:hover {
+  background: #5568d3;
+}
+
+.paymentInfo {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.cart h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inputCart1 {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.inputCart1:focus {
+  border-color: #667eea;
+}
+
+.cardDetails {
+  display: flex;
+  gap: 15px;
+}
+
+.inputCart2 {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.inputCart2:focus {
+  border-color: #667eea;
+}
+
+.inputCart2.error,
+.inputCart1.error {
+  border-color: #ff4444;
+}
+
+.logoutButton {
+  padding: 15px 40px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+}
+
+.logoutButton:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .profilePage {
+    padding: 20px;
+  }
+
+  .profileInfo,
+  .paymentInfo {
+    padding: 30px 20px;
+  }
+
+  .cardDetails {
+    flex-direction: column;
+  }
+}
